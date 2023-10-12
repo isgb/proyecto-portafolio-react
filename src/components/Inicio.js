@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 export const Inicio = () => {
   return (
-    <div>
+    <div className='home'>
       <h1>
-        Hola, soy Victor Robles y soy Desarrollador Web en Madrid, 
-        y ofrezco mis servicios de programación y desarrollo en todo 
+        Hola, soy <strong>Victor Robles</strong> y soy Desarrollador Web en Madrid, 
+        y ofrezco mis servicios de <strong>programación</strong> y <strong>desarrollo</strong> en todo 
         tipo de proyectos web.
       </h1>
       
@@ -16,7 +16,7 @@ export const Inicio = () => {
       </h2>
 
       <section className='last-works'>
-        <h2>Algunos de mis proyectos</h2>
+        <h2 className='heading'>Algunos de mis proyectos</h2>
         <p>Estos son algunos de mis trabajos de desarrollo web.</p>
 
         <div className='works'>
