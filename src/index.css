@@ -111,7 +111,7 @@ code {
   font-weight: lighter;
 }
 
-.home a{
+.home .title a{
   padding: 7px;
   border-radius: 5px;
   color: white;
@@ -163,7 +163,7 @@ button{
 
 input[type="submit"]:hover,
 button:hover,
-.home a:hover{
+.home .title a:hover{
   background-color: green;
 }
 
@@ -222,4 +222,10 @@ button:hover,
   padding-top: 15px;
   margin-top: 0px;
   border-top: 1px solid #ddd;
+}
+
+.page-work .mask{
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px #ddd;
 }

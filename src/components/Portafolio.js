@@ -1,6 +1,6 @@
 import React from 'react'
-import { trabajos } from '../data/trabajos'
 import { Link } from 'react-router-dom'
+import { ListadoTrabajos } from '../components/ListadoTrabajos'
 
 export const Portafolio = () => {
 
@@ -9,20 +9,8 @@ export const Portafolio = () => {
     <div className='page'>
       <h1 className='heading'>Portafolio</h1>
 
-      <section className='works'>
-      {
-        trabajos.map(trabajo => (
-          <article key={trabajo.id} className='work-item'>
-            <div className='mask'>
-              <img src={"/imagenes/"+trabajo.id+".png"}/>
-            </div>
-            <span>{trabajo.categorias}</span>
-            <h2><Link to={"/proyecto/"+trabajo.id}>{trabajo.nombre}</Link></h2>
-            <h3>{trabajo.tecnologias}</h3>
-          </article>
-        ))
-      }
-      </section>
+      <ListadoTrabajos/>
+      
     </div>
   )
 }
